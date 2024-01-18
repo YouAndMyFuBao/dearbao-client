@@ -3,5 +3,5 @@ export default function Home() {
     <>
       <p>디어바오</p>
     </>
-  )
+  );
 }
