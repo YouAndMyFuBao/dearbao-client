@@ -3979,6 +3979,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:5.17.15":
+  version: 5.17.15
+  resolution: "@tanstack/query-core@npm:5.17.15"
+  checksum: 2967963e94ff78c8bf4941efc09c81e6a6a78400322c26cf5d9528b169c3901a399752d679c3f4ab066c2a6e8df712b5a1b2e033e06fbbaa4b29f5be17032ab4
+  languageName: node
+  linkType: hard
+
+"@tanstack/query-devtools@npm:5.17.7":
+  version: 5.17.7
+  resolution: "@tanstack/query-devtools@npm:5.17.7"
+  checksum: 96bb17aec640e23150154e9f7eb7b841a5931bb748a86fe06946b307ab3832a94cbf065f1d394d26c576ab620d4f9e59f9518947acf569a7a42b83fd2421b209
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query-devtools@npm:^5.17.18":
+  version: 5.17.18
+  resolution: "@tanstack/react-query-devtools@npm:5.17.18"
+  dependencies:
+    "@tanstack/query-devtools": "npm:5.17.7"
+  peerDependencies:
+    "@tanstack/react-query": ^5.17.15
+    react: ^18.0.0
+  checksum: 34aee5515df3dcddb360967f03c66da684fb92c86afa0693de88d12d2e5445274c5b8afe18d856513c581130c81d6bdbe472cc0d9486d044ff04a1b4fd0a6c97
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^5.17.15":
+  version: 5.17.15
+  resolution: "@tanstack/react-query@npm:5.17.15"
+  dependencies:
+    "@tanstack/query-core": "npm:5.17.15"
+  peerDependencies:
+    react: ^18.0.0
+  checksum: 99e590cc7feb6355541673f48d8e700ef5f8373ed3d431a31bc8836d867d1ee6b7f9cdce54a4fc0b07686e35fe13631755debe7f2f8d228f1b74f06e0aab16de
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:^9.3.1":
   version: 9.3.4
   resolution: "@testing-library/dom@npm:9.3.4"
@@ -5391,6 +5428,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^1.6.5":
+  version: 1.6.5
+  resolution: "axios@npm:1.6.5"
+  dependencies:
+    follow-redirects: "npm:^1.15.4"
+    form-data: "npm:^4.0.0"
+    proxy-from-env: "npm:^1.1.0"
+  checksum: aeb9acf87590d8aa67946072ced38e01ca71f5dfe043782c0ccea667e5dd5c45830c08afac9be3d7c894f09684b8ab2a458f497d197b73621233bcf202d9d468
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^3.2.1":
   version: 3.2.1
   resolution: "axobject-query@npm:3.2.1"
@@ -6506,11 +6554,14 @@ __metadata:
     "@storybook/nextjs": "npm:^7.6.9"
     "@storybook/react": "npm:^7.6.9"
     "@storybook/test": "npm:^7.6.9"
+    "@tanstack/react-query": "npm:^5.17.15"
+    "@tanstack/react-query-devtools": "npm:^5.17.18"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     "@typescript-eslint/eslint-plugin": "npm:^6.19.0"
     "@typescript-eslint/parser": "npm:^6.19.0"
+    axios: "npm:^1.6.5"
     eslint: "npm:^8"
     eslint-config-next: "npm:^14.0.4"
     eslint-config-prettier: "npm:^9.1.0"
@@ -8076,6 +8127,16 @@ __metadata:
   version: 0.226.0
   resolution: "flow-parser@npm:0.226.0"
   checksum: 668d39f88597600b6411096cfb514f87e8909d53dad4279534baa43f5037a50b23a04e83da4996b3d6c6673a8ac953efd26b2481b7c64f0309e3a453ac32d530
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.15.4":
+  version: 1.15.5
+  resolution: "follow-redirects@npm:1.15.5"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 418d71688ceaf109dfd6f85f747a0c75de30afe43a294caa211def77f02ef19865b547dfb73fde82b751e1cc507c06c754120b848fe5a7400b0a669766df7615
   languageName: node
   linkType: hard
 
@@ -11416,7 +11477,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"proxy-from-env@npm:^1.0.0":
+"proxy-from-env@npm:^1.0.0, proxy-from-env@npm:^1.1.0":
   version: 1.1.0
   resolution: "proxy-from-env@npm:1.1.0"
   checksum: fe7dd8b1bdbbbea18d1459107729c3e4a2243ca870d26d34c2c1bcd3e4425b7bcc5112362df2d93cc7fb9746f6142b5e272fd1cc5c86ddf8580175186f6ad42b
