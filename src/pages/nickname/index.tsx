@@ -8,6 +8,7 @@ const NickName = () => {
   const [combinedText, setCombinedText] = useState<string>('');
   const [isInputValid, setIsInputValid] = useState<boolean>(true);
   const [errorMessage, setErrorMessage] = useState<string>('');
+  const [selectGender, setSelectGender] = useState<boolean>(true);
 
   useEffect(() => {
     generateRandomText();
@@ -60,16 +61,34 @@ const NickName = () => {
 
   return (
     <>
-      <div>
+      <div style={{ marginBottom: '20px' }}>
+        <p>닉네임</p>
         <input
           value={combinedText}
           onChange={handleInputChange}
-          placeholder="국문/영/숫자 조합 공백없이 10자 이하"
+          placeholder="국문/영/숫자 조합 공백없이 2-8자"
           maxLength={8}
           style={{ borderColor: isInputValid ? 'initial' : 'red' }}
         />
         {combinedText && <button onClick={handleDeleteClick}>전체 삭제</button>}
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+      </div>
+      <div>
+        <p>성별</p>
+        <div>
+          <button
+            onClick={() => setSelectGender(true)}
+            style={{ color: selectGender === true ? 'blue' : 'black' }}
+          >
+            임오
+          </button>
+          <button
+            onClick={() => setSelectGender(false)}
+            style={{ color: selectGender === false ? 'blue' : 'black' }}
+          >
+            삼튠
+          </button>
+        </div>
       </div>
       <button
         disabled={!isInputValid}
