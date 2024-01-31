@@ -35,7 +35,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# yarn berry
+# using zero install
 .yarn/*
 !.yarn/cache
 !.yarn/patches
@@ -43,3 +43,8 @@ next-env.d.ts
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# local env files
+.env
+.env*.local
+
