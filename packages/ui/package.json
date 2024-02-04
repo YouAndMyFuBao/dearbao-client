@@ -2,6 +2,9 @@
   "name": "@dearbao-client/ui",
   "packageManager": "yarn@4.1.0",
   "main": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --project ./tsconfig.json --noEmit"
+  },
   "devDependencies": {
     "@types/node": "^20.11.16",
     "@types/react": "^18.2.52",
